@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.header-font {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.normal-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.bold-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: #f2ebe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border: none;
+  border-radius: 0.5em;
+  width: 34em;
+  overflow: hidden;
+}
+.card__picture {
+  flex: 1;
+}
+.card--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.card__description {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.item {
+  color: #6c7289;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+}
+
+.item-title {
+  font-size: 1.75rem;
+  width: 80%;
+  line-height: 1em;
+}
+
+.description {
+  color: #6c7289;
+  font-size: 0.85rem;
+  line-height: 1.5em;
+  width: 95%;
+}
+
+.price {
+  color: #3c8067;
+  font-size: 2rem;
+}
+
+.price span {
+  color: #6c7289;
+  vertical-align: middle;
+  margin-left: 1em;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.cart-btn {
+  background-color: #3c8067;
+  padding: 0.75em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.cart-btn:hover {
+  background-color: #1A4031;
+}
+
+.cart-btn img {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 4em 2em;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
